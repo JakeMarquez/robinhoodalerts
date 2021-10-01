@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('assets/Roboto-Medium.ttf');
+}
+
+body.dark { background: #1E2124; }
+body.light { background: white; }
+.white { color: white; }
+.smokey { color: #E5E5E5; }
+.orange { color: rgb(0, 200, 5); }
+.roboto { font-family: 'roboto'; }
+
+.mdl-textfield__input.dark {
+    color: white!important;
+    border-bottom: 1px solid #E5E5E5!important
+}
+.mdl-textfield__label.dark {
+    color: #E5E5E5!important;
+}
+.mdl-textfield__error.dark {
+    color: rgb(0, 200, 5);
+}
+.mdl-textfield__input.light {
+    color: #424242!important;
+    border-bottom: 1px solid #E5E5E5!important
+    
+}
+.mdl-textfield__label.light {
+    color: #21CE99!important;
+}
+.mdl-textfield__label.light::after {
+    background-color: #21CE99!important;
+}
+.mdl-textfield__label.dark::after {
+    background-color: rgb(0, 200, 5)!important;
+}
+.mdl-textfield__error.light {
+    color: #21CE99;
+}
+
+
+.panel {
+    width: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2,h3 {
+    text-align: center;
+}
+h2 {
+    font-size: 28px!important;
+    margin-bottom: 0px!important;
+}
+h2.dark {
+    color: white;
+}
+h2.light {
+    color: black;
+}
+h3 {
+    font-size: 16px!important;
+    margin: 0px 0px 1.5rem 0px!important;
+}
+h3#alertprice.dark {
+    color: rgb(0, 200, 5);;
+}
+h3#alertprice.light {
+    color: #21CE99;
+}
+h3#currPrice.dark {
+    color: white;
+}
+h3#currPrice.light {
+    color: #424242;
+}
+
+button {
+    width: 100%;
+    color: #1E2124;
+}
+
+#submitbutton {
+    text-transform: none;
+}
+#submitbutton.dark {
+    background: rgb(0, 200, 5);;
+    color: #1E2124;
+}
+#submitbutton.light {
+    background: #21CE99;
+}
+#alertprice {
+    margin-bottom: 0px !important;
+}
+#currPrice {
+    height: 48px;
+    margin-bottom: 0px !important;
+}

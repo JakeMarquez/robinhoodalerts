@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html id='html' style='height: 16rem; width: 18rem'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/material.min.css">
+  </head>
+  <body id='body' style='height: 16rem; width: 18rem' class='light'>
+    <div class='panel'>
+        <h2 class='roboto light' id='ticker'>T</h2>
+        <form action="#" id='form'>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label roboto" id='pricecontainer'>
+                <input class="mdl-textfield__input roboto light" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="priceinput" required>
+                <label class="mdl-textfield__label roboto light" for="sample4" id='pricelabel'>Price</label>
+                <span class="mdl-textfield__error roboto light" id='priceerror'>Input is not a number!</span>
+            </div>
+        </form>
+        <h3 class='roboto light' id='alertprice'>Alert Price $28.10</h3>
+        <h3 class='roboto light' id='currPrice'>Current Price $28.10</h3>
+        <button id='submitbutton' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored roboto light">
+            Set Alert
+        </button>
+    </div>
+    <script type="module" src="modules/storage.mjs"></script>
+    <script type="module" src="modules/ui.mjs"></script>
+    <script type="module" src="modules/classes.mjs"></script>
+    <script type="module" src="index.js"></script>
+    <script src="assets/material.min.js"></script>
+  </body>
+</html>
