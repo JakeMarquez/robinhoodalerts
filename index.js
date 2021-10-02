@@ -42,6 +42,12 @@ currPrice = title.split(' ')[2];
 updateForm();
 bindClick('submitbutton', submit);
 
+document.getElementById('FAQ').addEventListener('click', () => {
+    window.open(
+        `https://jakehmarquez.wixsite.com/robinhoodalerts`
+    , '_blank');
+});
+
 // udpate curent price if the tab is updated while the window is open
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tabInfo) => {
     if (tabId === tab[0].id) {

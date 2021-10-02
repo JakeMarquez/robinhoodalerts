@@ -98,3 +98,11 @@ button {
     height: 48px;
     margin-bottom: 0px !important;
 }
+
+.info {
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
