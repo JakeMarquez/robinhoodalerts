@@ -7,8 +7,6 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tabInfo) => {
 
         const storage = await sGetAll();
         const alerts = storage['robinhoodalerts'];
-        
-        console.log(alerts);
 
         let queryOptions = { };
         let tabs = await chrome.tabs.query(queryOptions);
